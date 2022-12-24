@@ -38,6 +38,6 @@ npm run build
 ```
 
 ## Деплой
-Api - https://lotus-test-production.up.railway.app/ ([Railway](https://railway.app/))
+Api - https://lotus-test-production.up.railway.app/sse ([Railway](https://railway.app/))
 
 Frontend - https://lotus-test-neon.vercel.app/ ([Vercel](https://vercel.com/))
