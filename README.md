@@ -1,6 +1,6 @@
 # Тестовое задание frontend разработчик в компанию ЛОТОС
 
-[DEMO PREVIEW](http://sales-lab-test.vercel.app/)
+[DEMO PREVIEW](https://lotus-test-neon.vercel.app/)
 
 ---
 
