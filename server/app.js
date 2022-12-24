@@ -13,7 +13,6 @@ import {
 } from './room.js';
 import { HttpCode } from './config.js';
 
-const CLIENT_ORIGIN_URL = 'https://lotus-test-neon.vercel.app';
 const PORT = process.env.PORT || 3009;
 const SEND_DATA_INTERVAL = 1000;
 const DEFAULT_ACTIVE_CLIENT_ID = 1;
@@ -32,7 +31,7 @@ const bootstrap = async () => {
   const app = express();
 
   app.use(express.json());
-  app.use(cors({ origin: CLIENT_ORIGIN_URL }));
+  app.use(cors());
   app.use(morgan('dev'));
 
   // данные будут отправляться каждую секунду для всех клиентов
