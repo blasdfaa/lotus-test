@@ -18,6 +18,7 @@ function RoomRoute() {
 
     return () => {
       eventSource.removeEventListener('ROOM:STATUS', handleRoomStatus);
+      eventSource.close();
     };
   }, []);
 
