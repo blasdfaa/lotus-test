@@ -45,7 +45,6 @@ const bootstrap = async () => {
       Connection: 'keep-alive',
       'Content-Type': 'text/event-stream',
       'Cache-Control': 'no-cache',
-      'Access-Control-Allow-Origin': '*',
     });
 
     // Создать "аккаунт" участника и добавить в комнату
