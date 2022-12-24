@@ -2,7 +2,7 @@ import { Card, List } from 'antd';
 import { useEffect, useState } from 'react';
 import CountdownTag from '../components/CountdownTag';
 
-const API_EVENTS_URL = new URL('/sse', import.meta.env.VITE_API_URL).pathname;
+const API_EVENTS_URL = new URL('/sse', import.meta.env.VITE_API_URL).href;
 
 function RoomRoute() {
   const [data, setData] = useState(null);
