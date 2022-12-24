@@ -2,6 +2,8 @@ import { Card, List } from 'antd';
 import { useEffect, useState } from 'react';
 import CountdownTag from '../components/CountdownTag';
 
+const API_EVENTS_URL = new URL('/sse', process.env.API_URL).pathname;
+
 function RoomRoute() {
   const [data, setData] = useState(null);
 
@@ -10,7 +12,7 @@ function RoomRoute() {
   };
 
   useEffect(() => {
-    const eventSource = new EventSource(`http://localhost:3009/sse`);
+    const eventSource = new EventSource(API_EVENTS_URL);
 
     eventSource.addEventListener('ROOM:STATUS', handleRoomStatus);
 
